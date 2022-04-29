@@ -6,7 +6,7 @@
     --border-color: #dbdbdbdb;
     --star-gold-color: #FFCE3E;
 
-    --header-height: 120px;
+    --header-height: 136px;
     --navbar-height: 35px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     /* Add more here */
