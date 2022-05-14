@@ -1,0 +1,46 @@
+/* Mobide & tablet */
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 85px;
+    --navbar-height: 0px;
+  }
+
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .footer__download-qr {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__download-app-img {
+    height: 18px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .header-with-search {
+    margin: 0;
+  }
+
+  .header__cart {
+    width: 80px;
+    text-align: right;
+  }
+
+  .header__search-history-item img {
+    height: 22px;
+  }
+}
+
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

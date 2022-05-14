@@ -18,6 +18,17 @@ function addActiveCarousel(i) {
     carouselIndicators[i].classList.add("active");
 }
 
+arrIndicators = Array.from(carouselIndicators);
+arrIndicators.forEach((indicator, index) => {
+    const carouselItem = carouselItems[index];
+    indicator.onclick = function() {
+        i = index;
+        removeActiveCarousel();
+        carouselItem.classList.add("active");
+        this.classList.add("active");
+    };
+});
+
 carouselBtnLeft.onclick = function() {
     i--;
     if (i < 0) {

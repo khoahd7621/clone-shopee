@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
         rel="stylesheet">
@@ -19,8 +21,8 @@
     <div class="app">
         <!-- Header -->
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
                             <a href="https://banhang.shopee.vn/"
@@ -165,7 +167,7 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <a href="./" class="header__logo-link">
                             <svg viewBox="0 0 192 65"
                                 class="header__logo-img shopee-svg-icon header-with-search__shopee-logo icon-shopee-logo">
@@ -229,7 +231,7 @@
                         </button>
 
                         <!-- Header search suggest -->
-                        <ul class="header__search-suggest-list">
+                        <ul class="header__search-suggest-list hide-on-mobile-tablet">
                             <li class="header__search-suggest-list-item">
                                 <a href="#" class="header__search-suggest-link">Dép</a>
                             </li>
@@ -351,7 +353,7 @@
 
         <!-- Banner section -->
         <div class="app__banner">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__banner-content">
                     <div class="grid__column-8">
                         <div class="full-home-banners__main">
@@ -400,55 +402,73 @@
                 <ul class="app__banner-list">
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/3820374516083447a858e6f303441170_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/3820374516083447a858e6f303441170_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Bảo vệ sức khỏe</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Gì Cũng Rẻ - Mua Là Freeship</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/46a2a2c810622f314d78455da5e5d926_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/46a2a2c810622f314d78455da5e5d926_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Khung Giờ Săn Sale</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Miễn Phí Vận Chuyển</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/9da9a3acb5520d601f86a90434f455a5_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/9da9a3acb5520d601f86a90434f455a5_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Hoàn Xu 20% - Lên Đến 50K</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/765ca66457ec08802f74c529f71a99b7_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/765ca66457ec08802f74c529f71a99b7_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Hàng Hiệu -50%</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Hàng Quốc Tế</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Nạp Thẻ Dịch Vụ</span>
                         </a>
                     </li>
                     <li class="banner-list__item">
                         <a href="" class="banner-list__link">
-                            <div class="banner-list__img" style="background-image: url('https://cf.shopee.vn/file/96385a65fa50800e096bb790fa5c1dba_xhdpi');"></div>
+                            <div class="banner-list__img"
+                                style="background-image: url('https://cf.shopee.vn/file/96385a65fa50800e096bb790fa5c1dba_xhdpi');">
+                            </div>
                             <span class="banner-list__title">Deal Sốc Từ 1K</span>
                         </a>
                     </li>
@@ -458,7 +478,7 @@
 
         <!-- Container -->
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app_content">
                     <!-- Category left bar -->
                     <div class="grid__column-2">
@@ -485,7 +505,7 @@
                     <!-- Product -->
                     <div class="grid__column-10">
                         <!-- Filter bar -->
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn">Phổ biến</button>
                             <button class="home-filter__btn btn btn--primary">Mới nhất</button>
@@ -994,7 +1014,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -1080,7 +1100,7 @@
                 </div>
             </div>
             <div class="footer__bottom">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer_text">© 2022 - Bản quyền thuộc về Công ty Shopee.vn</p>
                 </div>
             </div>
