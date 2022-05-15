@@ -21,6 +21,14 @@
     display: none;
   }
 
+  .app__banner {
+    padding-top: calc(var(--header-height) + var(--header-sort-bar-height));
+  }
+
+  .header__sort-bar {
+    display: flex;
+  }
+
   .footer__download-qr {
     width: 50px;
     height: 50px;
