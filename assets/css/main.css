@@ -720,7 +720,7 @@
   list-style: none;
   display: flex;
   padding-left: 0;
-  margin: 11px 0;
+  margin: 8px 0 0 0;
 }
 
 .header__search-suggest-link {
@@ -1558,4 +1558,8 @@ i.home-product-item__like-icon-fill {
   margin: 0;
   font-size: 1.4rem;
   text-align: center;
+}
+
+#login-model-checkbox:checked ~ .login-modal {
+  display: flex;
 }

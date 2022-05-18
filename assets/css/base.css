@@ -99,6 +99,8 @@ html {
   left: 0;
   display: flex;
   animation: growth linear 0.1s;
+  z-index: 10;
+  display: none;
 }
 
 .modal__overlay {
