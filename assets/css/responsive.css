@@ -66,6 +66,10 @@
     padding-bottom: 24px;
   }
 
+  .full-home-banners__main-item img {
+    height: 204px;
+  }
+
   .full-home-banners__right-link:nth-child(2) {
     margin-top: 0px;
   }
