@@ -473,8 +473,8 @@
 
 /* Header with search */
 .header-with-search {
-  /* height: var(--header-with-search-height); */
-  height: 85px;
+  height: var(--header-with-search-height);
+  /* height: 85px; */
   display: flex;
   align-items: center;
   margin: 0 8px;
@@ -1001,16 +1001,13 @@
   border: 0;
 }
 
-.full-home-banners__right {
-  height: 235px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .full-home-banners__right-link {
   display: block;
   width: 100%;
+}
+
+.full-home-banners__right-link:nth-child(2) {
+  margin-top: 5px;
 }
 
 .full-home-banners__right-img {
