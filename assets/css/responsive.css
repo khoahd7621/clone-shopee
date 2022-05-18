@@ -29,6 +29,10 @@
     display: flex;
   }
 
+  .mobile-category {
+    display: flex;
+  }
+
   .footer__download-qr {
     width: 50px;
     height: 50px;
@@ -87,6 +91,18 @@
     display: none;
   }
 
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      top: calc(var(--header-height) / 2);
+    }
+
+    to {
+      opacity: 1;
+      top: var(--header-height);
+    }
+  }
+
   .mobile-search-checkbox:checked ~ .header__search {
     display: flex;
   }
@@ -113,22 +129,15 @@
     margin: 0 4px;
   }
 
-  @keyframes mobileSearchSideIn {
-    from {
-      opacity: 0;
-      top: calc(var(--header-height) / 2);
-    }
-
-    to {
-      opacity: 1;
-      top: var(--header-height);
-    }
+  .header__mobile-search {
+    display: block;
   }
-}
 
-/* Tablet & PC */
-@media (min-width: 740px) {
-  .hide-on-pc {
-    display: none;
+  .header__logo-img {
+    width: 130px;
+  }
+
+  .footer__content {
+    padding: 0 16px;
   }
 }
